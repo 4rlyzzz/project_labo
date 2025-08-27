@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/icons.css">
+</head>
+<body>
+<div class="contenedor-principal">
+
+    <header class="barra-superior">
+        <section class="seccion-izquierda">
+            <h1 class="titulo-app">On a budget</h1>
+        </section>
+
+        <section class="seccion-derecha">
+            <h2 class="subtitulo">Cuenta</h2>
+            <div class="info-usuario">
+                <span class="nombre-usuario">Pepe Grillo</span>
+                <span class="rol-usuario">Papa / Mama</span>
+            </div>
+        </section>
+    </header>
+
+    <div class="contenedor-medio">
+        <aside class="menu-lateral" id="menuLateral">
+            <nav>
+                <a class="opcion-menu" href="registro_diario.html">
+                    <i class="icono icono-documento"></i>Registro Diario
+                </a>
+                <a class="opcion-menu" href="balance.html">
+                    <i class="icono icono-grafico"></i>Balance
+                </a>
+                <a class="opcion-menu activa" href="cuenta.html">
+                    <i class="icono icono-persona"></i>Cuenta
+                </a>
+                <a class="opcion-menu" href="configuracion.html">
+                    <i class="icono icono-configuracion"></i>Configuración
+                </a>
+            </nav>
+
+            <footer class="parte-abajo">
+                <a class="opcion-menu" href="#">
+                    <i class="icono icono-salir"></i>Cerrar sesión
+                </a>
+            </footer>
+        </aside>
+
+        <section class="contenedor-tabla">
+            <article class="caja-tabla">
+                <header>
+                    <h2 class="titulo-tabla">Mi cuenta</h2>
+                </header>
+                <table class="fila-tabla">
+                    <tbody>
+                        <tr class="fila-tabla">
+                            <th class="encabezado-tabla">Usuario</th>
+                            <td class="celda">
+                                <input type="text" value="PepeGrillo" class="campo-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="encabezado-tabla">Nombre</th>
+                            <td class="celda">
+                                <input type="text" value="Pepe" class="campo-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="encabezado-tabla">Rol</th>
+                            <td class="celda">
+                                <input type="text" value="Papa/Mama" class="campo-input">
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="fila-total">
+                            <td colspan="2" class="celda-total-derecha">
+                                <button class="boton cancelar">Cancelar</button>
+                                <button class="boton guardar">Guardar</button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+        </section>
+
+    </div>
+</div>
+</body>
+</html>

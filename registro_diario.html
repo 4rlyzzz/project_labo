@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Diario</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/icons.css">
+
+</head>
+<body>
+<div class="contenedor-principal">
+
+    <header class="barra-superior">
+        <section class="seccion-izquierda">
+            <h1 class="titulo-app">On a budget</h1>
+        </section>
+
+        <section class="seccion-derecha">
+            <h2 class="subtitulo">Registro Diario</h2>
+
+            <div class="info-usuario">
+                <span class="nombre-usuario">Pepe Grillo</span>
+                <span class="rol-usuario">Papa / Mama</span>
+            </div>
+        </section>
+    </header>
+
+    <div class="contenedor-medio">
+        <aside class="menu-lateral" id="menuLateral">
+            <nav>
+                <a class="opcion-menu activa" href="registro_diario.html">
+                    <i class="icono icono-documento"></i>Registro Diario
+                </a>
+                <a class="opcion-menu" href="balance.html">
+                    <i class="icono icono-grafico"></i>Balance
+                </a>
+                <a class="opcion-menu" href="cuenta.html">
+                    <i class="icono icono-persona"></i>Cuenta
+                </a>
+                <a class="opcion-menu" href="configuracion.html">
+                    <i class="icono icono-configuracion"></i>Configuración
+                </a>
+            </nav>
+
+            <footer class="parte-abajo">
+                <a class="opcion-menu" href="#">
+                    <i class="icono icono-salir"></i>Cerrar sesión
+                </a>
+            </footer>
+        </aside>
+
+        <main class="area-trabajo">
+
+            <section class="controles-superiores">
+                <div class="grupo-controles">
+                    <div class="contenedor-switch">
+                        <span class="texto-switch">FAMILIAR / PERSONAL</span>
+                        <label class="boton-switch">
+                            <input type="checkbox" checked>
+                            <span class="deslizador"></span>
+                        </label>
+                    </div>
+
+                    <div class="caja-fecha">
+                        <input type="date" value="2025-08-28" class="campo-fecha">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contenedor-tablas">
+
+                <article class="caja-tabla">
+                    <header>
+                        <h2 class="titulo-tabla">Ingresos</h2>
+
+                    </header>
+
+                    <table class="tabla-datos">
+                        <thead>
+                        <tr>
+                            <th class="encabezado-tabla">Concepto</th>
+                            <th class="encabezado-tabla">Costo</th>
+                            <th class="encabezado-tabla">Subido por</th>
+                            <th class="encabezado-tabla derecha">Acción</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr class="fila-tabla">
+                            <td class="celda">Otros - Pago deuda</td>
+                            <td class="celda">S/. 50.00</td>
+                            <td class="celda">Pepe Grillo</td>
+                            <td class="celda derecha">
+                                <span >Editar</span>
+                            </td>
+                        </tr>
+                        <tr class = "fila-tabla">
+                            <td class="celda">Otros - Carreras</td>
+                            <td class="celda">S/. 25.00</td>
+                            <td class="celda">Pepe Grillo</td>
+                            <td class="celda derecha">
+                                <span >Editar</span>
+                            </td>
+
+                        </tr>
+
+                        </tbody>
+
+                        <tfoot>
+
+                        <tr class = "fila-total">
+                            <td class = "celda-total">Total</td>
+                            <td class = "celda-total" colspan="3">S/. 75.00</td>
+
+                        </tr>
+
+                        </tfoot>
+
+
+                    </table>
+                </article>
+
+                <article class="caja-tabla">
+                    <header>
+                        <h2 class="titulo-tabla">Egresos</h2>
+                    </header>
+
+                    <table class="tabla-datos">
+                        <thead>
+                        <tr>
+                            <th class="encabezado-tabla">Concepto</th>
+                            <th class="encabezado-tabla">Costo</th>
+                            <th class="encabezado-tabla">Subido por</th>
+                            <th class="encabezado-tabla derecha">Acción</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr class="fila-tabla">
+                            <td class="celda">Movilidad - Taxi</td>
+                            <td class="celda">S/. 10.00</td>
+                            <td class="celda">Pepe Grillo</td>
+                            <td class="celda derecha">
+                                <span >Editar</span>
+                            </td>
+                        </tr>
+                        <tr class="fila-tabla">
+                            <td class="celda">Movilidad - Omnibus</td>
+                            <td class="celda">S/. 6.00</td>
+                            <td class="celda">Pepe Grillo</td>
+                            <td class="celda derecha">
+                                <span >Editar</span>
+                            </td>
+                        </tr>
+
+                        <tr class="fila-tabla">
+                            <td class="celda">Comida - Almuerzo</td>
+                            <td class="celda">S/. 24.00</td>
+                            <td class="celda">Pepe Grillo</td>
+                            <td class="celda derecha">
+                                <span >Editar</span>
+                            </td>
+                        </tr>
+                        </tbody>
+
+                        <tfoot>
+                        <tr class = "fila-total">
+                            <td class = "celda-totaa">Total</td>
+                            <td class="celda-total" colspan="3">S/. 83.00</td>
+                        </tr>
+
+                        </tfoot>
+
+
+                    </table>
+                </article>
+            </section>
+
+            <footer class="seccion-inferior">
+                <aside class="caja-resumen">
+                    <h4 class="titulo-resumen">Resumen del Balance</h4>
+                    <div class="linea-resumen">
+                        <span class="texto-resumen">Diario</span>
+                        <span class="valor-resumen">S/. 12.00</span>
+                    </div>
+                    <div class="linea-resumen">
+                        <span class="texto-resumen">Mensual</span>
+                        <span class="valor-resumen">S/. 350.00</span>
+                    </div>
+                </aside>
+            </footer>
+
+        </main>
+    </div>
+</div>
+</body>
+</html>
